@@ -1,0 +1,4 @@
+Invoking command in '/home/lucas/turtlesim_ws/build/turtlesim_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lucas/turtlesim_ws/build/turtlesim_interfaces -- -j4 -l4
+Invoked command in '/home/lucas/turtlesim_ws/build/turtlesim_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lucas/turtlesim_ws/build/turtlesim_interfaces -- -j4 -l4
+Invoking command in '/home/lucas/turtlesim_ws/build/turtlesim_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lucas/turtlesim_ws/build/turtlesim_interfaces
+Invoked command in '/home/lucas/turtlesim_ws/build/turtlesim_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lucas/turtlesim_ws/build/turtlesim_interfaces

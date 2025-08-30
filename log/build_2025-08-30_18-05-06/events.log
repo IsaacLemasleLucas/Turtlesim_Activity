@@ -1,0 +1,9 @@
+[0.000000] (-) TimerEvent: {}
+[0.000293] (-) JobUnselected: {'identifier': 'cpp_pkg'}
+[0.000349] (-) JobUnselected: {'identifier': 'turtlesim_bringup'}
+[0.000408] (-) JobUnselected: {'identifier': 'turtlesim_interfaces'}
+[0.000803] (py_pkg) JobQueued: {'identifier': 'py_pkg', 'dependencies': OrderedDict([('turtlesim_interfaces', '/home/lucas/turtlesim_ws/install/turtlesim_interfaces')])}
+[0.000864] (py_pkg) JobStarted: {'identifier': 'py_pkg'}
+[0.098634] (-) TimerEvent: {}
+[0.137048] (py_pkg) JobEnded: {'identifier': 'py_pkg', 'rc': 0}
+[0.157149] (-) EventReactorShutdown: {}

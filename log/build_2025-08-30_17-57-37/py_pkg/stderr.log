@@ -1,0 +1,5 @@
+  File "/home/lucas/turtlesim_ws/install/py_pkg/lib/python3.10/site-packages/py_pkg/turle_control.py", line 4
+    from geometry_msgs/msg import Twist
+                      ^
+SyntaxError: invalid syntax
+

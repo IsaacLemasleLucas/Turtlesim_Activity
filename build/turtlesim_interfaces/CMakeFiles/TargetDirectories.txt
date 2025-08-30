@@ -1,0 +1,9 @@
+/home/lucas/turtlesim_ws/build/turtlesim_interfaces/CMakeFiles/uninstall.dir
+/home/lucas/turtlesim_ws/build/turtlesim_interfaces/CMakeFiles/turtlesim_interfaces_uninstall.dir
+/home/lucas/turtlesim_ws/build/turtlesim_interfaces/CMakeFiles/test.dir
+/home/lucas/turtlesim_ws/build/turtlesim_interfaces/CMakeFiles/edit_cache.dir
+/home/lucas/turtlesim_ws/build/turtlesim_interfaces/CMakeFiles/rebuild_cache.dir
+/home/lucas/turtlesim_ws/build/turtlesim_interfaces/CMakeFiles/list_install_components.dir
+/home/lucas/turtlesim_ws/build/turtlesim_interfaces/CMakeFiles/install.dir
+/home/lucas/turtlesim_ws/build/turtlesim_interfaces/CMakeFiles/install/local.dir
+/home/lucas/turtlesim_ws/build/turtlesim_interfaces/CMakeFiles/install/strip.dir

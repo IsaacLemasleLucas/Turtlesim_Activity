@@ -1,0 +1,24 @@
+[1.600s] Invoking command in '/home/lucas/turtlesim_ws/src/py_pkg': AMENT_PREFIX_PATH=/home/lucas/turtlesim_ws/install/turtlesim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lucas/turtlesim_ws/install/turtlesim_interfaces PYTHONPATH=/home/lucas/turtlesim_ws/build/py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lucas/turtlesim_ws/install/py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_pkg build --build-base /home/lucas/turtlesim_ws/build/py_pkg/build install --record /home/lucas/turtlesim_ws/build/py_pkg/install.log --single-version-externally-managed install_data
+[2.173s] running egg_info
+[2.174s] writing ../../build/py_pkg/py_pkg.egg-info/PKG-INFO
+[2.194s] writing dependency_links to ../../build/py_pkg/py_pkg.egg-info/dependency_links.txt
+[2.194s] writing entry points to ../../build/py_pkg/py_pkg.egg-info/entry_points.txt
+[2.194s] writing requirements to ../../build/py_pkg/py_pkg.egg-info/requires.txt
+[2.195s] writing top-level names to ../../build/py_pkg/py_pkg.egg-info/top_level.txt
+[2.198s] reading manifest file '../../build/py_pkg/py_pkg.egg-info/SOURCES.txt'
+[2.202s] writing manifest file '../../build/py_pkg/py_pkg.egg-info/SOURCES.txt'
+[2.202s] running build
+[2.202s] running build_py
+[2.203s] copying py_pkg/turtle_control.py -> /home/lucas/turtlesim_ws/build/py_pkg/build/lib/py_pkg
+[2.203s] running install
+[2.204s] running install_lib
+[2.205s] copying /home/lucas/turtlesim_ws/build/py_pkg/build/lib/py_pkg/turtle_control.py -> /home/lucas/turtlesim_ws/install/py_pkg/lib/python3.10/site-packages/py_pkg
+[2.206s] byte-compiling /home/lucas/turtlesim_ws/install/py_pkg/lib/python3.10/site-packages/py_pkg/turtle_control.py to turtle_control.cpython-310.pyc
+[2.208s] running install_data
+[2.208s] running install_egg_info
+[2.212s] removing '/home/lucas/turtlesim_ws/install/py_pkg/lib/python3.10/site-packages/py_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[2.212s] Copying ../../build/py_pkg/py_pkg.egg-info to /home/lucas/turtlesim_ws/install/py_pkg/lib/python3.10/site-packages/py_pkg-0.0.0-py3.10.egg-info
+[2.214s] running install_scripts
+[2.257s] Installing turtle_control script to /home/lucas/turtlesim_ws/install/py_pkg/lib/py_pkg
+[2.258s] writing list of installed files to '/home/lucas/turtlesim_ws/build/py_pkg/install.log'
+[2.316s] Invoked command in '/home/lucas/turtlesim_ws/src/py_pkg' returned '0': AMENT_PREFIX_PATH=/home/lucas/turtlesim_ws/install/turtlesim_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lucas/turtlesim_ws/install/turtlesim_interfaces PYTHONPATH=/home/lucas/turtlesim_ws/build/py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lucas/turtlesim_ws/install/py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_pkg build --build-base /home/lucas/turtlesim_ws/build/py_pkg/build install --record /home/lucas/turtlesim_ws/build/py_pkg/install.log --single-version-externally-managed install_data

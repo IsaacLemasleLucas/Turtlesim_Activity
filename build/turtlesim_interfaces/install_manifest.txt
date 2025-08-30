@@ -1,0 +1,16 @@
+/home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/ament_index/resource_index/package_run_dependencies/turtlesim_interfaces
+/home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/ament_index/resource_index/parent_prefix_path/turtlesim_interfaces
+/home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/environment/ament_prefix_path.sh
+/home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/environment/ament_prefix_path.dsv
+/home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/environment/path.sh
+/home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/environment/path.dsv
+/home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/local_setup.bash
+/home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/local_setup.sh
+/home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/local_setup.zsh
+/home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/local_setup.dsv
+/home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/package.dsv
+/home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/ament_index/resource_index/packages/turtlesim_interfaces
+/home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+/home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/turtlesim_interfacesConfig.cmake
+/home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/turtlesim_interfacesConfig-version.cmake
+/home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/package.xml

@@ -1,0 +1,9 @@
+/home/lucas/turtlesim_ws/build/cpp_pkg/CMakeFiles/uninstall.dir
+/home/lucas/turtlesim_ws/build/cpp_pkg/CMakeFiles/cpp_pkg_uninstall.dir
+/home/lucas/turtlesim_ws/build/cpp_pkg/CMakeFiles/test.dir
+/home/lucas/turtlesim_ws/build/cpp_pkg/CMakeFiles/edit_cache.dir
+/home/lucas/turtlesim_ws/build/cpp_pkg/CMakeFiles/rebuild_cache.dir
+/home/lucas/turtlesim_ws/build/cpp_pkg/CMakeFiles/list_install_components.dir
+/home/lucas/turtlesim_ws/build/cpp_pkg/CMakeFiles/install.dir
+/home/lucas/turtlesim_ws/build/cpp_pkg/CMakeFiles/install/local.dir
+/home/lucas/turtlesim_ws/build/cpp_pkg/CMakeFiles/install/strip.dir
