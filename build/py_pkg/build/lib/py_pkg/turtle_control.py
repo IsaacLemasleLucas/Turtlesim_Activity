@@ -2,6 +2,7 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
+from turtlesim.msg import Pose
     
     
 class TurtleControl(Node):
@@ -20,6 +21,8 @@ class TurtleControl(Node):
 
         self.publisher_ = self.create_publisher(Twist, "turtle1/cmd_vel", 10)
         self.timer_ = self.create_timer(self.get_parameter("timer_period").value, self.velocity_callback)
+
+        self.subscriber_ = self.create_subscription(Pose, "turtle1/pose", self.position_callback, 10)
     
     def velocity_callback(self):
         msg = Twist()
@@ -30,13 +33,21 @@ class TurtleControl(Node):
         msg.angular.y = self.get_parameter("angular_y").value
         msg.angular.z = self.get_parameter("angular_z").value
         self.publisher_.publish(msg)
+
+    def position_callback(self, msg):
+        x = msg.x 
+        y = msg.y 
+        theta = msg.theta 
+        l_velocity = msg.linear_velocity  
+        a_velocity = msg.angular_velocity 
+        self.get_logger().info(f"Positions of turtle : x = {x}, y = {y}, theta = {theta}")
+        self.get_logger().info(f"Velocity of turtle : Linear = {l_velocity}, Angular = {a_velocity}")
     
 def main(args=None):
     rclpy.init(args=args)
     node = TurtleControl()
     rclpy.spin(node)
     rclpy.shutdown()
-    
     
 if __name__ == "__main__":
     main()

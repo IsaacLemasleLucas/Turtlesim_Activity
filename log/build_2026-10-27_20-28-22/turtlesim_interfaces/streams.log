@@ -1,0 +1,6 @@
+[0.038s] Invoking command in '/home/lucas/turtlesim_activity_ws/build/turtlesim_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucas/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/lucas/turtlesim_activity_ws/build/turtlesim_interfaces -- -j4 -l4
+[0.135s] [0mCMake Error: The current CMakeCache.txt directory /home/lucas/turtlesim_activity_ws/build/turtlesim_interfaces/CMakeCache.txt is different than the directory /home/lucas/turtlesim_ws/build/turtlesim_interfaces where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.200s] [0mCMake Error: The source directory "/home/lucas/turtlesim_ws/src/turtlesim_interfaces" does not exist.
+[0.200s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.210s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.218s] Invoked command in '/home/lucas/turtlesim_activity_ws/build/turtlesim_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucas/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/lucas/turtlesim_activity_ws/build/turtlesim_interfaces -- -j4 -l4

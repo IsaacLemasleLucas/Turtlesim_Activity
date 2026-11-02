@@ -1,0 +1,5 @@
+[0.021s] Invoking command in '/home/lucas/turtlesim_activity_ws/build/cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucas/turtlesim_activity_ws/install/py_pkg:/home/lucas/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/lucas/turtlesim_activity_ws/build/cpp_pkg -- -j4 -l4
+[0.031s] [0mCMake Error: The current CMakeCache.txt directory /home/lucas/turtlesim_activity_ws/build/cpp_pkg/CMakeCache.txt is different than the directory /home/lucas/turtlesim_ws/build/cpp_pkg where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.048s] [0mCMake Error: The source directory "/home/lucas/turtlesim_ws/src/cpp_pkg" does not exist.
+[0.048s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.051s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1

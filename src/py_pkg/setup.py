@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "turtle_control=py_pkg.turtle_control:main"
+            "turtle_control = py_pkg.turtle_control:main"
         ],
     },
 )
