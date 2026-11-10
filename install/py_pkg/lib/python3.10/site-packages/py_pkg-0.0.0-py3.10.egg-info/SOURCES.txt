@@ -10,6 +10,7 @@ setup.py
 ../../build/py_pkg/py_pkg.egg-info/zip-safe
 py_pkg/__init__.py
 py_pkg/turtle_control.py
+py_pkg/turtle_spawn.py
 resource/py_pkg
 test/test_copyright.py
 test/test_flake8.py
