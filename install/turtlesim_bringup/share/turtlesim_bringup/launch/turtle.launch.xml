@@ -1,4 +1,1 @@
-<launch>
-    <node pkg="turtlesim" exec="turtlesim_node"/>
-    <node pkg="py_pkg" exec="turtle_control"/>
-</launch>
+/home/lucas/turtlesim_ws/src/turtlesim_bringup/launch/turtle.launch.xml

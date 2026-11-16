@@ -1,2 +1,1 @@
-source;share/turtlesim_bringup/environment/ament_prefix_path.sh
-source;share/turtlesim_bringup/environment/path.sh
+/home/lucas/turtlesim_ws/build/turtlesim_bringup/ament_cmake_environment_hooks/local_setup.dsv
