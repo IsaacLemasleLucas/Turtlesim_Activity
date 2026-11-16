@@ -20,20 +20,14 @@ class TurtleControlNode(Node):
         self.declare_parameter("angular_z",0.5)
         self.declare_parameter("timer_period", 0.5)
 
-        # --- Current position of the turtle --- #
+        # --- Initialisation of current position of the turtle --- #
         self.pos_x     = 0.0
         self.pos_y     = 0.0
         self.pos_theta = 0.0
 
-        # --- goal to reach --- #
+        # --- Goal to reach --- #
         self.goal_x     = 8.0
         self.goal_y     = 6.0
-        self.goal_theta = 0.0
-
-        # --- Parameter about direction and reaching the goal --- #
-        self.correction   = 1
-        self.approach     = 0.2
-        self.goal_reached = False
 
         # --- Publisher, subscriber & timer --- #
         self.publisher_ = self.create_publisher(Twist, "turtle1/cmd_vel", 10)
@@ -41,40 +35,36 @@ class TurtleControlNode(Node):
 
         self.subscriber_ = self.create_subscription(Pose, "turtle1/pose", self.position_callback, 10)
 
-    def goal_direction_compute(self):
-        self.get_logger().info(f"Je suis ici !!!\n")
-        self.goal_theta = math.atan((self.goal_y - self.pos_y)/(self.goal_x - self.pos_y))
-    
+
     def velocity_callback(self):
         msg = Twist()
-        self.goal_direction_compute()
-        # msg.linear.x = self.get_parameter("linear_x").value
-        # msg.linear.y = self.get_parameter("linear_y").value
-        # msg.linear.z = self.get_parameter("linear_z").value
-        # msg.angular.x = self.get_parameter("angular_x").value
-        # msg.angular.y = self.get_parameter("angular_y").value
-        # msg.angular.z = self.get_parameter("angular_z").value
 
-        # --- Going for the goal --- #
-        x_condition = self.pos_x > (self.goal_x + self.approach) or self.pos_x < (self.goal_x - self.approach)
-        y_condition = self.pos_y > (self.goal_y + self.approach) or self.pos_y < (self.goal_y - self.approach)
-        theta_condition = self.pos_theta > (self.goal_theta + self.approach) or self.pos_theta < (self.goal_theta - self.approach)
+        # Distance to goal : 
+        dist = ((self.goal_x - self.pos_x)**2 + (self.goal_y - self.pos_y)**2)**(0.5)
+        # Angle to goal :
+        goal_theta = math.atan2((self.goal_y - self.pos_y),(self.goal_x - self.pos_y))
+        # Difference between angles :
+        diff_theta = goal_theta - self.pos_theta 
+        # normalisation of diff theta :
+        diff_theta = math.atan2(math.sin(diff_theta),math.cos(diff_theta))
+        # Direction for the goal :
+        if  diff_theta > 0.05 :
+            msg.angular.z = 0.1
+            msg.linear .x = 0.0
+            self.get_logger().info(f"PLUS")
+        elif diff_theta < -0.05:    
+            msg.angular.z = -0.1
+            msg.linear .x = 0.0
 
-        if theta_condition:
+            self.get_logger().info(f"MOINS")
+        else:
             msg.angular.z = 0.0
-            if x_condition or y_condition:
-                msg.linear.x += 0.5
+            # Go to the goal :
+            if dist > 0.1 :
+                msg.linear.x = 0.5
             else:
                 msg.linear.x = 0.0
-        else:
-            msg.angular.z = 0.1
-            msg.linear.x = 0.0
-        # --- Direction for the goal --- #
-        # if self.pos_theta > (self.goal_theta + 0.1):
-        #     msg.angular.z -= self.correction
-        # elif self.pos_theta < (self.goal_theta - 0.1):
-        #     msg.angular.z += self.correction
-
+        self.get_logger().info(f"Distance = {dist}, Diff Theta = {diff_theta}")
         # --- Publish the message --- #
         self.publisher_.publish(msg)
 
@@ -84,8 +74,7 @@ class TurtleControlNode(Node):
         self.pos_theta = msg.theta 
         # l_velocity = msg.linear_velocity  
         # a_velocity = msg.angular_velocity 
-        self.get_logger().info(f"Positions of turtle : x = {self.pos_x}, y = {self.pos_y}, theta = {self.pos_theta}")
-        self.get_logger().info(f"Positions of goal   : x = {self.goal_x}, y = {self.goal_y}, theta = {self.goal_theta}")
+        # self.get_logger().info(f"Positions of turtle : x = {self.pos_x}, y = {self.pos_y}, theta = {self.pos_theta} ")
         # self.get_logger().info(f"Velocity of turtle : Linear = {l_velocity}, Angular = {a_velocity}")
     
 def main(args=None):

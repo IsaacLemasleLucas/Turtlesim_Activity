@@ -1,0 +1,5 @@
+  File "/home/lucas/turtlesim_ws/install/py_pkg/lib/python3.10/site-packages/py_pkg/turtle_control.py", line 68
+    self.get_logger().info(f"Positions of turtle : x = {self.pos_x}, y = {self.pos_y}, theta = {self.pos_theta} )
+                           ^
+SyntaxError: unterminated string literal (detected at line 68)
+
