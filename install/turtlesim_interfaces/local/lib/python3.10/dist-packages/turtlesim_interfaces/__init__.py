@@ -1,0 +1,1 @@
+/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_py/turtlesim_interfaces/__init__.py

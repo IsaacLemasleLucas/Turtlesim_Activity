@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "turtlesim_interfaces__rs",
+		"source" : "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/turtlesim_interfaces__rs"
+	}
+}

@@ -1,0 +1,23 @@
+{
+  "package_name": "turtlesim_interfaces",
+  "output_dir": "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_typesupport_fastrtps_cpp/turtlesim_interfaces",
+  "template_dir": "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource",
+  "idl_tuples": [
+    "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_adapter/turtlesim_interfaces:msg/Turtle.idl",
+    "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_adapter/turtlesim_interfaces:msg/TurtleArray.idl",
+    "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_adapter/turtlesim_interfaces:srv/CatchTurtle.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_fastrtps_cpp/__init__.py",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/idl__rosidl_typesupport_fastrtps_cpp.hpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/msg__rosidl_typesupport_fastrtps_cpp.hpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/srv__rosidl_typesupport_fastrtps_cpp.hpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em",
+    "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_adapter/turtlesim_interfaces/msg/Turtle.idl",
+    "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_adapter/turtlesim_interfaces/msg/TurtleArray.idl",
+    "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_adapter/turtlesim_interfaces/srv/CatchTurtle.idl"
+  ]
+}

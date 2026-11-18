@@ -1,0 +1,31 @@
+[0.021s] Invoking command in '/home/lucas/turtlesim_ws/build/turtlesim_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucas/turtlesim_ws/install/py_pkg:/home/lucas/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/lucas/turtlesim_ws/build/turtlesim_interfaces -- -j4 -l4
+[0.054s] [33mCMake Warning (dev) at CMakeLists.txt:13:
+[0.054s]   Syntax Warning in cmake code at column 19
+[0.054s] 
+[0.055s]   Argument not separated from preceding token by whitespace.
+[0.055s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.055s] [0m
+[0.055s] [33mCMake Warning (dev) at CMakeLists.txt:14:
+[0.055s]   Syntax Warning in cmake code at column 24
+[0.055s] 
+[0.055s]   Argument not separated from preceding token by whitespace.
+[0.055s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.055s] [0m
+[0.069s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.255s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.292s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.298s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.306s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.382s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.447s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[0.448s]   rosidl_generate_interfaces() the passed file ',' doesn't exist relative to
+[0.448s]   the CMAKE_CURRENT_SOURCE_DIR
+[0.448s]   '/home/lucas/turtlesim_ws/src/turtlesim_interfaces'
+[0.448s] Call Stack (most recent call first):
+[0.448s]   CMakeLists.txt:12 (rosidl_generate_interfaces)
+[0.448s] 
+[0.448s] [0m
+[0.448s] -- Configuring incomplete, errors occurred!
+[0.448s] See also "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/CMakeFiles/CMakeOutput.log".
+[0.453s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.456s] Invoked command in '/home/lucas/turtlesim_ws/build/turtlesim_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucas/turtlesim_ws/install/py_pkg:/home/lucas/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/lucas/turtlesim_ws/build/turtlesim_interfaces -- -j4 -l4

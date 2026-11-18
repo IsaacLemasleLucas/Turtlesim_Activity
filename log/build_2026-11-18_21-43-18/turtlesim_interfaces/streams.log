@@ -1,0 +1,253 @@
+[0.021s] Invoking command in '/home/lucas/turtlesim_ws/build/turtlesim_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucas/turtlesim_ws/install/py_pkg:/home/lucas/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/lucas/turtlesim_ws/build/turtlesim_interfaces -- -j4 -l4
+[0.062s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.228s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.237s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.240s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.244s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.286s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.663s] -- Found ament_cmake_ros: 0.10.1 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.925s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.255s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.287s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.292s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.332s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.332s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.332s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.332s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.363s] -- Found PythonExtra: .so  
+[1.495s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.534s] -- Added test 'lint_cmake' to check CMake code style
+[1.537s] -- Added test 'xmllint' to check XML markup files
+[1.544s] -- Configuring done
+[1.602s] -- Generating done
+[1.618s] -- Build files have been written to: /home/lucas/turtlesim_ws/build/turtlesim_interfaces
+[1.656s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.671s] [  4%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[1.673s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.684s] [  6%] Built target ament_cmake_python_symlink_turtlesim_interfaces
+[2.059s] [  6%] Built target turtlesim_interfaces__rs
+[2.121s] running egg_info
+[2.122s] creating turtlesim_interfaces.egg-info
+[2.122s] writing turtlesim_interfaces.egg-info/PKG-INFO
+[2.123s] writing dependency_links to turtlesim_interfaces.egg-info/dependency_links.txt
+[2.124s] writing top-level names to turtlesim_interfaces.egg-info/top_level.txt
+[2.124s] writing manifest file 'turtlesim_interfaces.egg-info/SOURCES.txt'
+[2.127s] reading manifest file 'turtlesim_interfaces.egg-info/SOURCES.txt'
+[2.128s] writing manifest file 'turtlesim_interfaces.egg-info/SOURCES.txt'
+[2.174s] [  6%] Built target ament_cmake_python_build_turtlesim_interfaces_egg
+[2.237s] [  6%] Built target turtlesim_interfaces__cpp
+[2.259s] [  8%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.262s] [ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.276s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.296s] [ 14%] [32mBuilding C object CMakeFiles/turtlesim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_interfaces/msg/detail/turtle__functions.c.o[0m
+[2.454s] [ 16%] [32mBuilding C object CMakeFiles/turtlesim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_interfaces/msg/detail/turtle_array__functions.c.o[0m
+[2.515s] [ 18%] [32mBuilding C object CMakeFiles/turtlesim_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_interfaces/srv/detail/catch_turtle__functions.c.o[0m
+[2.603s] [ 20%] [32m[1mLinking C shared library libturtlesim_interfaces__rosidl_generator_c.so[0m
+[2.657s] [ 22%] [32mBuilding CXX object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlesim_interfaces/msg/turtle__type_support.cpp.o[0m
+[2.688s] [ 22%] Built target turtlesim_interfaces__rosidl_generator_c
+[2.706s] [ 25%] [32mBuilding CXX object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlesim_interfaces/msg/turtle_array__type_support.cpp.o[0m
+[2.734s] [ 27%] [32mBuilding CXX object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlesim_interfaces/msg/detail/turtle__type_support.cpp.o[0m
+[2.753s] [ 29%] [32mBuilding CXX object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_interfaces/msg/detail/dds_fastrtps/turtle__type_support.cpp.o[0m
+[3.089s] [ 33%] [32mBuilding CXX object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtlesim_interfaces/srv/catch_turtle__type_support.cpp.o[0m
+[3.089s] [ 33%] [32mBuilding CXX object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlesim_interfaces/msg/detail/turtle_array__type_support.cpp.o[0m
+[3.273s] [ 35%] [32mBuilding CXX object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtlesim_interfaces/srv/detail/catch_turtle__type_support.cpp.o[0m
+[3.317s] [ 37%] [32mBuilding CXX object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_interfaces/msg/detail/dds_fastrtps/turtle_array__type_support.cpp.o[0m
+[3.469s] [ 39%] [32m[1mLinking CXX shared library libturtlesim_interfaces__rosidl_typesupport_cpp.so[0m
+[3.532s] [ 39%] Built target turtlesim_interfaces__rosidl_typesupport_cpp
+[3.548s] [ 41%] [32mBuilding CXX object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtlesim_interfaces/srv/detail/dds_fastrtps/catch_turtle__type_support.cpp.o[0m
+[3.611s] [ 43%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.816s] [ 45%] [32m[1mLinking CXX shared library libturtlesim_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[3.860s] [ 47%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.938s] [ 47%] Built target turtlesim_interfaces__rosidl_typesupport_introspection_cpp
+[3.964s] [ 50%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.116s] [ 52%] [32m[1mLinking CXX shared library libturtlesim_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.147s] [ 54%] [32mBuilding CXX object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_interfaces/msg/detail/turtle__type_support_c.cpp.o[0m
+[4.237s] [ 54%] Built target turtlesim_interfaces__rosidl_typesupport_fastrtps_cpp
+[4.254s] [ 56%] [32mBuilding CXX object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_interfaces/msg/detail/turtle_array__type_support_c.cpp.o[0m
+[4.376s] [ 58%] [32mBuilding CXX object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlesim_interfaces/msg/turtle__type_support.cpp.o[0m
+[4.420s] [ 60%] [32mBuilding CXX object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlesim_interfaces/msg/turtle_array__type_support.cpp.o[0m
+[4.431s] [ 62%] [32mBuilding C object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_interfaces/msg/detail/turtle__type_support.c.o[0m
+[4.471s] [ 64%] [32mBuilding CXX object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtlesim_interfaces/srv/catch_turtle__type_support.cpp.o[0m
+[4.481s] [ 66%] [32mBuilding C object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_interfaces/msg/detail/turtle_array__type_support.c.o[0m
+[4.528s] [ 68%] [32mBuilding C object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtlesim_interfaces/srv/detail/catch_turtle__type_support.c.o[0m
+[4.530s] [ 70%] [32m[1mLinking CXX shared library libturtlesim_interfaces__rosidl_typesupport_c.so[0m
+[4.583s] [ 72%] [32m[1mLinking C shared library libturtlesim_interfaces__rosidl_typesupport_introspection_c.so[0m
+[4.607s] [ 72%] Built target turtlesim_interfaces__rosidl_typesupport_c
+[4.624s] [ 75%] [32mBuilding CXX object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_interfaces/srv/detail/catch_turtle__type_support_c.cpp.o[0m
+[4.632s] [ 75%] Built target turtlesim_interfaces__rosidl_typesupport_introspection_c
+[5.049s] [ 77%] [32m[1mLinking CXX shared library libturtlesim_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[5.156s] [ 77%] Built target turtlesim_interfaces__rosidl_typesupport_fastrtps_c
+[5.186s] [ 77%] Built target turtlesim_interfaces
+[5.216s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.839s] [ 79%] Built target turtlesim_interfaces__py
+[5.872s] [ 83%] [32mBuilding C object CMakeFiles/turtlesim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_interfaces/msg/_turtle_array_s.c.o[0m
+[5.872s] [ 83%] [32mBuilding C object CMakeFiles/turtlesim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_interfaces/msg/_turtle_s.c.o[0m
+[5.872s] [ 85%] [32mBuilding C object CMakeFiles/turtlesim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/turtlesim_interfaces/srv/_catch_turtle_s.c.o[0m
+[6.012s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/turtlesim_interfaces/libturtlesim_interfaces__rosidl_generator_py.so[0m
+[6.069s] [ 87%] Built target turtlesim_interfaces__rosidl_generator_py
+[6.100s] [ 93%] [32mBuilding C object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/turtlesim_interfaces/_turtlesim_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[6.100s] [ 93%] [32mBuilding C object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/turtlesim_interfaces/_turtlesim_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[6.100s] [ 93%] [32mBuilding C object CMakeFiles/turtlesim_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/turtlesim_interfaces/_turtlesim_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[6.239s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/turtlesim_interfaces/turtlesim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.239s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/turtlesim_interfaces/turtlesim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.260s] [100%] [32m[1mLinking C shared library rosidl_generator_py/turtlesim_interfaces/turtlesim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.291s] [100%] Built target turtlesim_interfaces__rosidl_typesupport_c__pyext
+[6.291s] [100%] Built target turtlesim_interfaces__rosidl_typesupport_introspection_c__pyext
+[6.314s] [100%] Built target turtlesim_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[6.331s] Invoked command in '/home/lucas/turtlesim_ws/build/turtlesim_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucas/turtlesim_ws/install/py_pkg:/home/lucas/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/lucas/turtlesim_ws/build/turtlesim_interfaces -- -j4 -l4
+[6.333s] Invoking command in '/home/lucas/turtlesim_ws/build/turtlesim_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucas/turtlesim_ws/install/py_pkg:/home/lucas/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/lucas/turtlesim_ws/build/turtlesim_interfaces
+[6.343s] -- Install configuration: ""
+[6.344s] -- Execute custom install script
+[6.344s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/ament_index/resource_index/rosidl_interfaces/turtlesim_interfaces
+[6.361s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle__functions.h
+[6.373s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle__struct.h
+[6.387s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle__type_support.h
+[6.400s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle_array__functions.h
+[6.412s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle_array__struct.h
+[6.425s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle_array__type_support.h
+[6.437s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/rosidl_generator_c__visibility_control.h
+[6.450s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/turtle.h
+[6.463s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/turtle_array.h
+[6.476s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/srv/catch_turtle.h
+[6.489s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/srv/detail/catch_turtle__functions.h
+[6.502s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/srv/detail/catch_turtle__struct.h
+[6.514s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/srv/detail/catch_turtle__type_support.h
+[6.527s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/environment/library_path.sh
+[6.540s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/environment/library_path.dsv
+[6.553s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h
+[6.566s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle_array__rosidl_typesupport_fastrtps_c.h
+[6.580s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.593s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/srv/detail/catch_turtle__rosidl_typesupport_fastrtps_c.h
+[6.606s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle__rosidl_typesupport_introspection_c.h
+[6.619s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle_array__rosidl_typesupport_introspection_c.h
+[6.632s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.644s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/srv/detail/catch_turtle__rosidl_typesupport_introspection_c.h
+[6.657s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle__builder.hpp
+[6.670s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle__struct.hpp
+[6.683s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle__traits.hpp
+[6.696s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle__type_support.hpp
+[6.708s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle_array__builder.hpp
+[6.720s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle_array__struct.hpp
+[6.733s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle_array__traits.hpp
+[6.745s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle_array__type_support.hpp
+[6.758s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[6.771s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/turtle.hpp
+[6.785s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/turtle_array.hpp
+[6.797s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/srv/catch_turtle.hpp
+[6.810s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/srv/detail/catch_turtle__builder.hpp
+[6.823s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/srv/detail/catch_turtle__struct.hpp
+[6.835s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/srv/detail/catch_turtle__traits.hpp
+[6.847s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/srv/detail/catch_turtle__type_support.hpp
+[6.861s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_cpp.hpp
+[6.874s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle_array__rosidl_typesupport_fastrtps_cpp.hpp
+[6.887s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.899s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/srv/detail/catch_turtle__rosidl_typesupport_fastrtps_cpp.hpp
+[6.912s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle__rosidl_typesupport_introspection_cpp.hpp
+[6.925s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/msg/detail/turtle_array__rosidl_typesupport_introspection_cpp.hpp
+[6.938s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/include/turtlesim_interfaces/turtlesim_interfaces/srv/detail/catch_turtle__rosidl_typesupport_introspection_cpp.hpp
+[6.950s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/environment/pythonpath.sh
+[6.963s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/environment/pythonpath.dsv
+[6.976s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[6.989s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[7.002s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[7.014s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[7.028s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/__init__.py
+[7.041s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/_turtlesim_interfaces_s.ep.rosidl_typesupport_c.c
+[7.054s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/_turtlesim_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[7.066s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/_turtlesim_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[7.080s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/libturtlesim_interfaces__rosidl_generator_py.so
+[7.093s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/msg/__init__.py
+[7.105s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/msg/_turtle.py
+[7.117s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/msg/_turtle_array.py
+[7.130s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/msg/_turtle_array_s.c
+[7.142s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/msg/_turtle_s.c
+[7.156s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/srv/__init__.py
+[7.169s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/srv/_catch_turtle.py
+[7.182s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/srv/_catch_turtle_s.c
+[7.196s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/turtlesim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[7.209s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/turtlesim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[7.221s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/turtlesim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[7.234s] -- Up-to-date symlink: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/turtlesim_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[7.234s] -- Up-to-date symlink: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/turtlesim_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[7.235s] -- Up-to-date symlink: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/turtlesim_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[7.235s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/rust/Cargo.toml
+[7.248s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/rust/build.rs
+[7.262s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/rust/src/lib.rs
+[7.275s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/rust/src/msg.rs
+[7.288s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/rust/src/msg/rmw.rs
+[7.301s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/rust/src/srv.rs
+[7.314s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/rust/src/srv/rmw.rs
+[7.327s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/msg/Turtle.idl
+[7.339s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/msg/TurtleArray.idl
+[7.352s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/srv/CatchTurtle.idl
+[7.365s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/msg/Turtle.msg
+[7.378s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/msg/TurtleArray.msg
+[7.391s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/srv/CatchTurtle.srv
+[7.404s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/srv/CatchTurtle_Request.msg
+[7.417s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/srv/CatchTurtle_Response.msg
+[7.430s] -- Up-to-date symlink: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/ament_index/resource_index/package_run_dependencies/turtlesim_interfaces
+[7.430s] -- Up-to-date symlink: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/ament_index/resource_index/parent_prefix_path/turtlesim_interfaces
+[7.430s] -- Up-to-date symlink: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/environment/ament_prefix_path.sh
+[7.430s] -- Up-to-date symlink: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/environment/ament_prefix_path.dsv
+[7.431s] -- Up-to-date symlink: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/environment/path.sh
+[7.431s] -- Up-to-date symlink: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/environment/path.dsv
+[7.431s] -- Up-to-date symlink: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/local_setup.bash
+[7.431s] -- Up-to-date symlink: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/local_setup.sh
+[7.431s] -- Up-to-date symlink: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/local_setup.zsh
+[7.432s] -- Up-to-date symlink: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/local_setup.dsv
+[7.432s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/package.dsv
+[7.445s] -- Up-to-date symlink: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/ament_index/resource_index/packages/turtlesim_interfaces
+[7.446s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/rosidl_cmake-extras.cmake
+[7.459s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.472s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[7.485s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[7.498s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[7.510s] -- Up-to-date symlink: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.511s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[7.523s] -- Symlinking: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[7.536s] -- Up-to-date symlink: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/turtlesim_interfacesConfig.cmake
+[7.536s] -- Up-to-date symlink: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/turtlesim_interfacesConfig-version.cmake
+[7.536s] -- Up-to-date symlink: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/package.xml
+[7.536s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/lib/libturtlesim_interfaces__rosidl_generator_c.so
+[7.537s] -- Set runtime path of "/home/lucas/turtlesim_ws/install/turtlesim_interfaces/lib/libturtlesim_interfaces__rosidl_generator_c.so" to ""
+[7.537s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/lib/libturtlesim_interfaces__rosidl_typesupport_fastrtps_c.so
+[7.538s] -- Set runtime path of "/home/lucas/turtlesim_ws/install/turtlesim_interfaces/lib/libturtlesim_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[7.538s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/lib/libturtlesim_interfaces__rosidl_typesupport_introspection_c.so
+[7.539s] -- Set runtime path of "/home/lucas/turtlesim_ws/install/turtlesim_interfaces/lib/libturtlesim_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[7.539s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/lib/libturtlesim_interfaces__rosidl_typesupport_c.so
+[7.539s] -- Set runtime path of "/home/lucas/turtlesim_ws/install/turtlesim_interfaces/lib/libturtlesim_interfaces__rosidl_typesupport_c.so" to ""
+[7.539s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/lib/libturtlesim_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[7.540s] -- Set runtime path of "/home/lucas/turtlesim_ws/install/turtlesim_interfaces/lib/libturtlesim_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[7.540s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/lib/libturtlesim_interfaces__rosidl_typesupport_introspection_cpp.so
+[7.541s] -- Set runtime path of "/home/lucas/turtlesim_ws/install/turtlesim_interfaces/lib/libturtlesim_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[7.541s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/lib/libturtlesim_interfaces__rosidl_typesupport_cpp.so
+[7.542s] -- Set runtime path of "/home/lucas/turtlesim_ws/install/turtlesim_interfaces/lib/libturtlesim_interfaces__rosidl_typesupport_cpp.so" to ""
+[7.595s] Listing '/home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces'...
+[7.595s] Compiling '/home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/__init__.py'...
+[7.595s] Listing '/home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/msg'...
+[7.596s] Compiling '/home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/msg/__init__.py'...
+[7.596s] Compiling '/home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/msg/_turtle.py'...
+[7.596s] Compiling '/home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/msg/_turtle_array.py'...
+[7.596s] Listing '/home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/srv'...
+[7.596s] Compiling '/home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/srv/__init__.py'...
+[7.596s] Compiling '/home/lucas/turtlesim_ws/install/turtlesim_interfaces/local/lib/python3.10/dist-packages/turtlesim_interfaces/srv/_catch_turtle.py'...
+[7.601s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/lib/libturtlesim_interfaces__rosidl_generator_py.so
+[7.602s] -- Set runtime path of "/home/lucas/turtlesim_ws/install/turtlesim_interfaces/lib/libturtlesim_interfaces__rosidl_generator_py.so" to ""
+[7.602s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/export_turtlesim_interfaces__rosidl_generator_cExport.cmake
+[7.602s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/export_turtlesim_interfaces__rosidl_generator_cExport-noconfig.cmake
+[7.602s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/export_turtlesim_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[7.603s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/export_turtlesim_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[7.603s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/turtlesim_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[7.603s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/turtlesim_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[7.603s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/turtlesim_interfaces__rosidl_typesupport_cExport.cmake
+[7.603s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/turtlesim_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[7.604s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/export_turtlesim_interfaces__rosidl_generator_cppExport.cmake
+[7.604s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/export_turtlesim_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[7.604s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/export_turtlesim_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[7.604s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/turtlesim_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[7.605s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/turtlesim_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[7.605s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/turtlesim_interfaces__rosidl_typesupport_cppExport.cmake
+[7.605s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/turtlesim_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[7.605s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/export_turtlesim_interfaces__rosidl_generator_pyExport.cmake
+[7.605s] -- Installing: /home/lucas/turtlesim_ws/install/turtlesim_interfaces/share/turtlesim_interfaces/cmake/export_turtlesim_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[7.609s] Invoked command in '/home/lucas/turtlesim_ws/build/turtlesim_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lucas/turtlesim_ws/install/py_pkg:/home/lucas/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/lucas/turtlesim_ws/build/turtlesim_interfaces

@@ -1,0 +1,1 @@
+/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_c/turtlesim_interfaces/msg/detail/turtle_array__functions.h

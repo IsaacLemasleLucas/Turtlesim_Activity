@@ -315,6 +315,81 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
+# install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/turtlesim_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/turtlesim_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+
+# install(DIRECTORY "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_c/turtlesim_interfaces/" "DESTINATION" "include/turtlesim_interfaces/turtlesim_interfaces" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" DIRECTORY "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_c/turtlesim_interfaces/" "DESTINATION" "include/turtlesim_interfaces/turtlesim_interfaces" "PATTERN" "*.h")
+
+# install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/turtlesim_interfaces/environment")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/turtlesim_interfaces/environment")
+
+# install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/turtlesim_interfaces/environment")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/turtlesim_interfaces/environment")
+
+# install(DIRECTORY "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_typesupport_fastrtps_c/turtlesim_interfaces/" "DESTINATION" "include/turtlesim_interfaces/turtlesim_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" DIRECTORY "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_typesupport_fastrtps_c/turtlesim_interfaces/" "DESTINATION" "include/turtlesim_interfaces/turtlesim_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+
+# install(DIRECTORY "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_typesupport_introspection_c/turtlesim_interfaces/" "DESTINATION" "include/turtlesim_interfaces/turtlesim_interfaces" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" DIRECTORY "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_typesupport_introspection_c/turtlesim_interfaces/" "DESTINATION" "include/turtlesim_interfaces/turtlesim_interfaces" "PATTERN" "*.h")
+
+# install(DIRECTORY "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_cpp/turtlesim_interfaces/" "DESTINATION" "include/turtlesim_interfaces/turtlesim_interfaces" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" DIRECTORY "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_cpp/turtlesim_interfaces/" "DESTINATION" "include/turtlesim_interfaces/turtlesim_interfaces" "PATTERN" "*.hpp")
+
+# install(DIRECTORY "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_typesupport_fastrtps_cpp/turtlesim_interfaces/" "DESTINATION" "include/turtlesim_interfaces/turtlesim_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" DIRECTORY "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_typesupport_fastrtps_cpp/turtlesim_interfaces/" "DESTINATION" "include/turtlesim_interfaces/turtlesim_interfaces" "PATTERN_EXCLUDE" "*.cpp")
+
+# install(DIRECTORY "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_typesupport_introspection_cpp/turtlesim_interfaces/" "DESTINATION" "include/turtlesim_interfaces/turtlesim_interfaces" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" DIRECTORY "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_typesupport_introspection_cpp/turtlesim_interfaces/" "DESTINATION" "include/turtlesim_interfaces/turtlesim_interfaces" "PATTERN" "*.hpp")
+
+# install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/turtlesim_interfaces/environment")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/turtlesim_interfaces/environment")
+
+# install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/turtlesim_interfaces/environment")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/turtlesim_interfaces/environment")
+
+# install(DIRECTORY "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_python/turtlesim_interfaces/turtlesim_interfaces.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/turtlesim_interfaces-0.0.0-py3.10.egg-info")
+ament_cmake_symlink_install_directory("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" DIRECTORY "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_python/turtlesim_interfaces/turtlesim_interfaces.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/turtlesim_interfaces-0.0.0-py3.10.egg-info")
+
+# install(DIRECTORY "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_py/turtlesim_interfaces/" "DESTINATION" "local/lib/python3.10/dist-packages/turtlesim_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" DIRECTORY "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_py/turtlesim_interfaces/" "DESTINATION" "local/lib/python3.10/dist-packages/turtlesim_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+
+# install("TARGETS" "turtlesim_interfaces__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/turtlesim_interfaces")
+include("/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "turtlesim_interfaces__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/turtlesim_interfaces")
+include("/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "turtlesim_interfaces__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/turtlesim_interfaces")
+include("/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(DIRECTORY "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_rs/turtlesim_interfaces/rust" "DESTINATION" "share/turtlesim_interfaces")
+ament_cmake_symlink_install_directory("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" DIRECTORY "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_rs/turtlesim_interfaces/rust" "DESTINATION" "share/turtlesim_interfaces")
+
+# install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_adapter/turtlesim_interfaces/msg/Turtle.idl" "DESTINATION" "share/turtlesim_interfaces/msg")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_adapter/turtlesim_interfaces/msg/Turtle.idl" "DESTINATION" "share/turtlesim_interfaces/msg")
+
+# install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_adapter/turtlesim_interfaces/msg/TurtleArray.idl" "DESTINATION" "share/turtlesim_interfaces/msg")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_adapter/turtlesim_interfaces/msg/TurtleArray.idl" "DESTINATION" "share/turtlesim_interfaces/msg")
+
+# install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_adapter/turtlesim_interfaces/srv/CatchTurtle.idl" "DESTINATION" "share/turtlesim_interfaces/srv")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_adapter/turtlesim_interfaces/srv/CatchTurtle.idl" "DESTINATION" "share/turtlesim_interfaces/srv")
+
+# install(FILES "/home/lucas/turtlesim_ws/src/turtlesim_interfaces/msg/Turtle.msg" "DESTINATION" "share/turtlesim_interfaces/msg")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/src/turtlesim_interfaces/msg/Turtle.msg" "DESTINATION" "share/turtlesim_interfaces/msg")
+
+# install(FILES "/home/lucas/turtlesim_ws/src/turtlesim_interfaces/msg/TurtleArray.msg" "DESTINATION" "share/turtlesim_interfaces/msg")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/src/turtlesim_interfaces/msg/TurtleArray.msg" "DESTINATION" "share/turtlesim_interfaces/msg")
+
+# install(FILES "/home/lucas/turtlesim_ws/src/turtlesim_interfaces/srv/CatchTurtle.srv" "DESTINATION" "share/turtlesim_interfaces/srv")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/src/turtlesim_interfaces/srv/CatchTurtle.srv" "DESTINATION" "share/turtlesim_interfaces/srv")
+
+# install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_cmake/srv/CatchTurtle_Request.msg" "DESTINATION" "share/turtlesim_interfaces/srv")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_cmake/srv/CatchTurtle_Request.msg" "DESTINATION" "share/turtlesim_interfaces/srv")
+
+# install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_cmake/srv/CatchTurtle_Response.msg" "DESTINATION" "share/turtlesim_interfaces/srv")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_cmake/srv/CatchTurtle_Response.msg" "DESTINATION" "share/turtlesim_interfaces/srv")
+
 # install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlesim_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlesim_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
@@ -351,8 +426,29 @@ ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interf
 # install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/turtlesim_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
 ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/turtlesim_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
 
+# install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/turtlesim_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/turtlesim_interfaces/cmake")
+
+# install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/turtlesim_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/turtlesim_interfaces/cmake")
+
+# install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/turtlesim_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/turtlesim_interfaces/cmake")
+
+# install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/turtlesim_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/turtlesim_interfaces/cmake")
+
+# install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/turtlesim_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/turtlesim_interfaces/cmake")
+
 # install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/turtlesim_interfaces/cmake")
 ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/turtlesim_interfaces/cmake")
+
+# install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/turtlesim_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/turtlesim_interfaces/cmake")
+
+# install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_cmake/rosidl_cmake_aggregate_target-extras.cmake" "DESTINATION" "share/turtlesim_interfaces/cmake")
+ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_cmake/rosidl_cmake_aggregate_target-extras.cmake" "DESTINATION" "share/turtlesim_interfaces/cmake")
 
 # install(FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_core/turtlesim_interfacesConfig.cmake" "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_core/turtlesim_interfacesConfig-version.cmake" "DESTINATION" "share/turtlesim_interfaces/cmake")
 ament_cmake_symlink_install_files("/home/lucas/turtlesim_ws/src/turtlesim_interfaces" FILES "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_core/turtlesim_interfacesConfig.cmake" "/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_core/turtlesim_interfacesConfig-version.cmake" "DESTINATION" "share/turtlesim_interfaces/cmake")

@@ -1,0 +1,1 @@
+/home/lucas/turtlesim_ws/build/turtlesim_interfaces/ament_cmake_python/turtlesim_interfaces/turtlesim_interfaces.egg-info/top_level.txt
