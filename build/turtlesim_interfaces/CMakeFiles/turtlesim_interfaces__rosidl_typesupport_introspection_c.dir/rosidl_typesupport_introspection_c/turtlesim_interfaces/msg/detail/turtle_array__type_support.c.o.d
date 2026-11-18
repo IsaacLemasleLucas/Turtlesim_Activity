@@ -56,4 +56,11 @@ CMakeFiles/turtlesim_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_t
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_c/turtlesim_interfaces/msg/rosidl_generator_c__visibility_control.h \
- /home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_c/turtlesim_interfaces/msg/detail/turtle_array__struct.h
+ /home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_c/turtlesim_interfaces/msg/detail/turtle_array__struct.h \
+ /home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_c/turtlesim_interfaces/msg/detail/turtle__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_c/turtlesim_interfaces/msg/turtle.h \
+ /home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_c/turtlesim_interfaces/msg/detail/turtle__functions.h \
+ /home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_c/turtlesim_interfaces/msg/detail/turtle__type_support.h \
+ /home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_typesupport_introspection_c/turtlesim_interfaces/msg/detail/turtle__rosidl_typesupport_introspection_c.h

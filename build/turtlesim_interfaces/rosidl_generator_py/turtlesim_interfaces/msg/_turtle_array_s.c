@@ -16,6 +16,14 @@
 #include "turtlesim_interfaces/msg/detail/turtle_array__struct.h"
 #include "turtlesim_interfaces/msg/detail/turtle_array__functions.h"
 
+#include "rosidl_runtime_c/primitives_sequence.h"
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
+
+// Nested array functions includes
+#include "turtlesim_interfaces/msg/detail/turtle__functions.h"
+// end nested array functions include
+bool turtlesim_interfaces__msg__turtle__convert_from_py(PyObject * _pymsg, void * _ros_message);
+PyObject * turtlesim_interfaces__msg__turtle__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool turtlesim_interfaces__msg__turtle_array__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -50,13 +58,37 @@ bool turtlesim_interfaces__msg__turtle_array__convert_from_py(PyObject * _pymsg,
     assert(strncmp("turtlesim_interfaces.msg._turtle_array.TurtleArray", full_classname_dest, 50) == 0);
   }
   turtlesim_interfaces__msg__TurtleArray * ros_message = _ros_message;
-  {  // a
-    PyObject * field = PyObject_GetAttrString(_pymsg, "a");
+  {  // array
+    PyObject * field = PyObject_GetAttrString(_pymsg, "array");
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->a = PyLong_AsLongLong(field);
+    PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'array'");
+    if (!seq_field) {
+      Py_DECREF(field);
+      return false;
+    }
+    Py_ssize_t size = PySequence_Size(field);
+    if (-1 == size) {
+      Py_DECREF(seq_field);
+      Py_DECREF(field);
+      return false;
+    }
+    if (!turtlesim_interfaces__msg__Turtle__Sequence__init(&(ros_message->array), size)) {
+      PyErr_SetString(PyExc_RuntimeError, "unable to create turtlesim_interfaces__msg__Turtle__Sequence ros_message");
+      Py_DECREF(seq_field);
+      Py_DECREF(field);
+      return false;
+    }
+    turtlesim_interfaces__msg__Turtle * dest = ros_message->array.data;
+    for (Py_ssize_t i = 0; i < size; ++i) {
+      if (!turtlesim_interfaces__msg__turtle__convert_from_py(PySequence_Fast_GET_ITEM(seq_field, i), &dest[i])) {
+        Py_DECREF(seq_field);
+        Py_DECREF(field);
+        return false;
+      }
+    }
+    Py_DECREF(seq_field);
     Py_DECREF(field);
   }
 
@@ -81,11 +113,28 @@ PyObject * turtlesim_interfaces__msg__turtle_array__convert_to_py(void * raw_ros
     }
   }
   turtlesim_interfaces__msg__TurtleArray * ros_message = (turtlesim_interfaces__msg__TurtleArray *)raw_ros_message;
-  {  // a
+  {  // array
     PyObject * field = NULL;
-    field = PyLong_FromLongLong(ros_message->a);
+    size_t size = ros_message->array.size;
+    field = PyList_New(size);
+    if (!field) {
+      return NULL;
+    }
+    turtlesim_interfaces__msg__Turtle * item;
+    for (size_t i = 0; i < size; ++i) {
+      item = &(ros_message->array.data[i]);
+      PyObject * pyitem = turtlesim_interfaces__msg__turtle__convert_to_py(item);
+      if (!pyitem) {
+        Py_DECREF(field);
+        return NULL;
+      }
+      int rc = PyList_SetItem(field, i, pyitem);
+      (void)rc;
+      assert(rc == 0);
+    }
+    assert(PySequence_Check(field));
     {
-      int rc = PyObject_SetAttrString(_pymessage, "a", field);
+      int rc = PyObject_SetAttrString(_pymessage, "array", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

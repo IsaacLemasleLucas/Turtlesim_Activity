@@ -16,6 +16,10 @@
 #include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
+// Include directives for member types
+// Member 'array'
+#include "turtlesim_interfaces/msg/detail/turtle__struct.hpp"
+
 #ifndef _WIN32
 # define DEPRECATED__turtlesim_interfaces__msg__TurtleArray __attribute__((deprecated))
 #else
@@ -36,33 +40,25 @@ struct TurtleArray_
 
   explicit TurtleArray_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   {
-    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
-      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->a = 0ll;
-    }
+    (void)_init;
   }
 
   explicit TurtleArray_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   {
+    (void)_init;
     (void)_alloc;
-    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
-      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->a = 0ll;
-    }
   }
 
   // field types and members
-  using _a_type =
-    int64_t;
-  _a_type a;
+  using _array_type =
+    std::vector<turtlesim_interfaces::msg::Turtle_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<turtlesim_interfaces::msg::Turtle_<ContainerAllocator>>>;
+  _array_type array;
 
   // setters for named parameter idiom
-  Type & set__a(
-    const int64_t & _arg)
+  Type & set__array(
+    const std::vector<turtlesim_interfaces::msg::Turtle_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<turtlesim_interfaces::msg::Turtle_<ContainerAllocator>>> & _arg)
   {
-    this->a = _arg;
+    this->array = _arg;
     return *this;
   }
 
@@ -108,7 +104,7 @@ struct TurtleArray_
   // comparison operators
   bool operator==(const TurtleArray_ & other) const
   {
-    if (this->a != other.a) {
+    if (this->array != other.array) {
       return false;
     }
     return true;

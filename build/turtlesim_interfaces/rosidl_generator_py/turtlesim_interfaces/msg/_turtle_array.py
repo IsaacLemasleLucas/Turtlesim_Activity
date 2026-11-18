@@ -42,6 +42,10 @@ class Metaclass_TurtleArray(type):
             cls._TYPE_SUPPORT = module.type_support_msg__msg__turtle_array
             cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__msg__turtle_array
 
+            from turtlesim_interfaces.msg import Turtle
+            if Turtle.__class__._TYPE_SUPPORT is None:
+                Turtle.__class__.__import_type_support__()
+
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
         # list constant names here so that they appear in the help text of
@@ -55,22 +59,22 @@ class TurtleArray(metaclass=Metaclass_TurtleArray):
     """Message class 'TurtleArray'."""
 
     __slots__ = [
-        '_a',
+        '_array',
     ]
 
     _fields_and_field_types = {
-        'a': 'int64',
+        'array': 'sequence<turtlesim_interfaces/Turtle>',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['turtlesim_interfaces', 'msg'], 'Turtle')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.a = kwargs.get('a', int())
+        self.array = kwargs.get('array', [])
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -101,7 +105,7 @@ class TurtleArray(metaclass=Metaclass_TurtleArray):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.a != other.a:
+        if self.array != other.array:
             return False
         return True
 
@@ -111,16 +115,25 @@ class TurtleArray(metaclass=Metaclass_TurtleArray):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def a(self):
-        """Message field 'a'."""
-        return self._a
+    def array(self):
+        """Message field 'array'."""
+        return self._array
 
-    @a.setter
-    def a(self, value):
+    @array.setter
+    def array(self, value):
         if __debug__:
+            from turtlesim_interfaces.msg import Turtle
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
             assert \
-                isinstance(value, int), \
-                "The 'a' field must be of type 'int'"
-            assert value >= -9223372036854775808 and value < 9223372036854775808, \
-                "The 'a' field must be an integer in [-9223372036854775808, 9223372036854775807]"
-        self._a = value
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, Turtle) for v in value) and
+                 True), \
+                "The 'array' field must be a set or sequence and each value of type 'Turtle'"
+        self._array = value

@@ -21,15 +21,15 @@ namespace msg
 namespace builder
 {
 
-class Init_TurtleArray_a
+class Init_TurtleArray_array
 {
 public:
-  Init_TurtleArray_a()
+  Init_TurtleArray_array()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::turtlesim_interfaces::msg::TurtleArray a(::turtlesim_interfaces::msg::TurtleArray::_a_type arg)
+  ::turtlesim_interfaces::msg::TurtleArray array(::turtlesim_interfaces::msg::TurtleArray::_array_type arg)
   {
-    msg_.a = std::move(arg);
+    msg_.array = std::move(arg);
     return std::move(msg_);
   }
 
@@ -48,7 +48,7 @@ template<>
 inline
 auto build<::turtlesim_interfaces::msg::TurtleArray>()
 {
-  return turtlesim_interfaces::msg::builder::Init_TurtleArray_a();
+  return turtlesim_interfaces::msg::builder::Init_TurtleArray_array();
 }
 
 }  // namespace turtlesim_interfaces

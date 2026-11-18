@@ -1,2 +1,1 @@
-int64 a
-# turtlesim_interfaces/msg/Turtle[] array
+turtlesim_interfaces/Turtle[] array

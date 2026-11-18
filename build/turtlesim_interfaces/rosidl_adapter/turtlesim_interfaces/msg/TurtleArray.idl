@@ -2,11 +2,12 @@
 // with input from turtlesim_interfaces/msg/TurtleArray.msg
 // generated code does not contain a copyright notice
 
+#include "turtlesim_interfaces/msg/Turtle.idl"
 
 module turtlesim_interfaces {
   module msg {
     struct TurtleArray {
-      int64 a;
+      sequence<turtlesim_interfaces::msg::Turtle> array;
     };
   };
 };

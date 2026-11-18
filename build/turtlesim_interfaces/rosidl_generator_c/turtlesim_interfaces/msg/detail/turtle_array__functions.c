@@ -11,13 +11,21 @@
 #include "rcutils/allocator.h"
 
 
+// Include directives for member types
+// Member `array`
+#include "turtlesim_interfaces/msg/detail/turtle__functions.h"
+
 bool
 turtlesim_interfaces__msg__TurtleArray__init(turtlesim_interfaces__msg__TurtleArray * msg)
 {
   if (!msg) {
     return false;
   }
-  // a
+  // array
+  if (!turtlesim_interfaces__msg__Turtle__Sequence__init(&msg->array, 0)) {
+    turtlesim_interfaces__msg__TurtleArray__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -27,7 +35,8 @@ turtlesim_interfaces__msg__TurtleArray__fini(turtlesim_interfaces__msg__TurtleAr
   if (!msg) {
     return;
   }
-  // a
+  // array
+  turtlesim_interfaces__msg__Turtle__Sequence__fini(&msg->array);
 }
 
 bool
@@ -36,8 +45,10 @@ turtlesim_interfaces__msg__TurtleArray__are_equal(const turtlesim_interfaces__ms
   if (!lhs || !rhs) {
     return false;
   }
-  // a
-  if (lhs->a != rhs->a) {
+  // array
+  if (!turtlesim_interfaces__msg__Turtle__Sequence__are_equal(
+      &(lhs->array), &(rhs->array)))
+  {
     return false;
   }
   return true;
@@ -51,8 +62,12 @@ turtlesim_interfaces__msg__TurtleArray__copy(
   if (!input || !output) {
     return false;
   }
-  // a
-  output->a = input->a;
+  // array
+  if (!turtlesim_interfaces__msg__Turtle__Sequence__copy(
+      &(input->array), &(output->array)))
+  {
+    return false;
+  }
   return true;
 }
 

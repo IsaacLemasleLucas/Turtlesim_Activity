@@ -4,7 +4,8 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from turtlesim.msg import Pose
 import math
-    
+
+from turtlesim_interfaces.msg import Turtle, TurtleArray
     
 class TurtleControlNode(Node):
     def __init__(self):
@@ -31,6 +32,7 @@ class TurtleControlNode(Node):
         self.publisher_  = self.create_publisher(Twist, "turtle1/cmd_vel", 10)
         self.subscriber_ = self.create_subscription(Pose, "turtle1/pose", self.position_callback, 10)
         self.timer_      = self.create_timer(self.get_parameter("timer_period").value, self.velocity_callback)
+        self.subscriber_alive = self.create_subscription(TurtleArray, "alive_turtle", self.alive_turtle_callback, 10)
 
 
     def position_callback(self, msg):
@@ -67,6 +69,10 @@ class TurtleControlNode(Node):
         # --- Publish the message --- #
         self.publisher_.publish(msg)
 
+    def alive_turtle_callback(self, msg):
+        self.get_logger().info(f"\n\nLast turtle = {msg.array[-1].name}\n")
+        self.goal_x = msg.array[-1].x
+        self.goal_y = msg.array[-1].y
 
     
 def main(args=None):

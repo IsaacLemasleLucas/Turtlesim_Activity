@@ -117,7 +117,7 @@ pub struct TurtleArray {
 
     // This member is not documented.
     #[allow(missing_docs)]
-    pub a: i64,
+    pub array: rosidl_runtime_rs::Sequence<super::super::msg::rmw::Turtle>,
 
 }
 

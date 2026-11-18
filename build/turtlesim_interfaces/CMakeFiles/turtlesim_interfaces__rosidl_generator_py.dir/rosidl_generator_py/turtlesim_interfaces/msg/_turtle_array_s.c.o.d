@@ -208,5 +208,10 @@ CMakeFiles/turtlesim_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tur
  /usr/include/python3.10/numpy/__multiarray_api.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
  /home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_c/turtlesim_interfaces/msg/detail/turtle_array__struct.h \
+ /home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_c/turtlesim_interfaces/msg/detail/turtle__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_c/turtlesim_interfaces/msg/detail/turtle_array__functions.h \
- /home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_c/turtlesim_interfaces/msg/rosidl_generator_c__visibility_control.h
+ /home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_c/turtlesim_interfaces/msg/rosidl_generator_c__visibility_control.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h \
+ /home/lucas/turtlesim_ws/build/turtlesim_interfaces/rosidl_generator_c/turtlesim_interfaces/msg/detail/turtle__functions.h

@@ -451,9 +451,12 @@ CMakeFiles/turtlesim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesu
   /usr/include/c++/11/bits/istream.tcc \
   /usr/include/malloc.h \
   rosidl_generator_c/turtlesim_interfaces/msg/detail/turtle_array__struct.h \
+  rosidl_generator_c/turtlesim_interfaces/msg/detail/turtle__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   rosidl_generator_c/turtlesim_interfaces/msg/detail/turtle_array__functions.h \
   /usr/include/c++/11/stdlib.h \
-  rosidl_generator_c/turtlesim_interfaces/msg/rosidl_generator_c__visibility_control.h
+  rosidl_generator_c/turtlesim_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  rosidl_generator_c/turtlesim_interfaces/msg/detail/turtle__functions.h
 
 CMakeFiles/turtlesim_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_interfaces/srv/detail/catch_turtle__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/turtlesim_interfaces/srv/detail/catch_turtle__type_support_c.cpp \
   /usr/include/stdc-predef.h \

@@ -14,6 +14,10 @@
 #include "turtlesim_interfaces/msg/detail/turtle_array__struct.hpp"
 #include "rosidl_runtime_cpp/traits.hpp"
 
+// Include directives for member types
+// Member 'array'
+#include "turtlesim_interfaces/msg/detail/turtle__traits.hpp"
+
 namespace turtlesim_interfaces
 {
 
@@ -25,10 +29,21 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: a
+  // member: array
   {
-    out << "a: ";
-    rosidl_generator_traits::value_to_yaml(msg.a, out);
+    if (msg.array.size() == 0) {
+      out << "array: []";
+    } else {
+      out << "array: [";
+      size_t pending_items = msg.array.size();
+      for (auto item : msg.array) {
+        to_flow_style_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -37,14 +52,23 @@ inline void to_block_style_yaml(
   const TurtleArray & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: a
+  // member: array
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "a: ";
-    rosidl_generator_traits::value_to_yaml(msg.a, out);
-    out << "\n";
+    if (msg.array.size() == 0) {
+      out << "array: []\n";
+    } else {
+      out << "array:\n";
+      for (auto item : msg.array) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "-\n";
+        to_block_style_yaml(item, out, indentation + 2);
+      }
+    }
   }
 }  // NOLINT(readability/fn_size)
 
@@ -94,11 +118,11 @@ inline const char * name<turtlesim_interfaces::msg::TurtleArray>()
 
 template<>
 struct has_fixed_size<turtlesim_interfaces::msg::TurtleArray>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<turtlesim_interfaces::msg::TurtleArray>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<turtlesim_interfaces::msg::TurtleArray>

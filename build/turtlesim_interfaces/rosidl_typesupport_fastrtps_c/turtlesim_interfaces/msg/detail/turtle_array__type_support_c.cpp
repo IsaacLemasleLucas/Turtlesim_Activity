@@ -34,8 +34,20 @@ extern "C"
 {
 #endif
 
+#include "turtlesim_interfaces/msg/detail/turtle__functions.h"  // array
 
 // forward declare type support functions
+size_t get_serialized_size_turtlesim_interfaces__msg__Turtle(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+size_t max_serialized_size_turtlesim_interfaces__msg__Turtle(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, turtlesim_interfaces, msg, Turtle)();
 
 
 using _TurtleArray__ros_msg_type = turtlesim_interfaces__msg__TurtleArray;
@@ -49,9 +61,23 @@ static bool _TurtleArray__cdr_serialize(
     return false;
   }
   const _TurtleArray__ros_msg_type * ros_message = static_cast<const _TurtleArray__ros_msg_type *>(untyped_ros_message);
-  // Field name: a
+  // Field name: array
   {
-    cdr << ros_message->a;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, turtlesim_interfaces, msg, Turtle
+      )()->data);
+    size_t size = ros_message->array.size;
+    auto array_ptr = ros_message->array.data;
+    cdr << static_cast<uint32_t>(size);
+    for (size_t i = 0; i < size; ++i) {
+      if (!callbacks->cdr_serialize(
+          &array_ptr[i], cdr))
+      {
+        return false;
+      }
+    }
   }
 
   return true;
@@ -66,9 +92,41 @@ static bool _TurtleArray__cdr_deserialize(
     return false;
   }
   _TurtleArray__ros_msg_type * ros_message = static_cast<_TurtleArray__ros_msg_type *>(untyped_ros_message);
-  // Field name: a
+  // Field name: array
   {
-    cdr >> ros_message->a;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, turtlesim_interfaces, msg, Turtle
+      )()->data);
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+
+    // Check there are at least 'size' remaining bytes in the CDR stream before resizing
+    auto old_state = cdr.getState();
+    bool correct_size = cdr.jump(size);
+    cdr.setState(old_state);
+    if (!correct_size) {
+      fprintf(stderr, "sequence size exceeds remaining buffer\n");
+      return false;
+    }
+
+    if (ros_message->array.data) {
+      turtlesim_interfaces__msg__Turtle__Sequence__fini(&ros_message->array);
+    }
+    if (!turtlesim_interfaces__msg__Turtle__Sequence__init(&ros_message->array, size)) {
+      fprintf(stderr, "failed to create array for field 'array'");
+      return false;
+    }
+    auto array_ptr = ros_message->array.data;
+    for (size_t i = 0; i < size; ++i) {
+      if (!callbacks->cdr_deserialize(
+          cdr, &array_ptr[i]))
+      {
+        return false;
+      }
+    }
   }
 
   return true;
@@ -88,11 +146,17 @@ size_t get_serialized_size_turtlesim_interfaces__msg__TurtleArray(
   (void)padding;
   (void)wchar_size;
 
-  // field.name a
+  // field.name array
   {
-    size_t item_size = sizeof(ros_message->a);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+    size_t array_size = ros_message->array.size;
+    auto array_ptr = ros_message->array.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += get_serialized_size_turtlesim_interfaces__msg__Turtle(
+        &array_ptr[index], current_alignment);
+    }
   }
 
   return current_alignment - initial_alignment;
@@ -123,13 +187,28 @@ size_t max_serialized_size_turtlesim_interfaces__msg__TurtleArray(
   full_bounded = true;
   is_plain = true;
 
-  // member: a
+  // member: array
   {
-    size_t array_size = 1;
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
-    last_member_size = array_size * sizeof(uint64_t);
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size;
+      inner_size =
+        max_serialized_size_turtlesim_interfaces__msg__Turtle(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -140,7 +219,7 @@ size_t max_serialized_size_turtlesim_interfaces__msg__TurtleArray(
     using DataType = turtlesim_interfaces__msg__TurtleArray;
     is_plain =
       (
-      offsetof(DataType, a) +
+      offsetof(DataType, array) +
       last_member_size
       ) == ret_val;
   }

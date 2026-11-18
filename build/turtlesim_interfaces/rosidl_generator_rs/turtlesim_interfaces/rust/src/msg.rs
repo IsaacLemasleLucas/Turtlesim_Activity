@@ -83,7 +83,7 @@ pub struct TurtleArray {
 
     // This member is not documented.
     #[allow(missing_docs)]
-    pub a: i64,
+    pub array: Vec<super::msg::Turtle>,
 
 }
 
@@ -101,17 +101,26 @@ impl rosidl_runtime_rs::Message for TurtleArray {
   fn into_rmw_message(msg_cow: std::borrow::Cow<'_, Self>) -> std::borrow::Cow<'_, Self::RmwMsg> {
     match msg_cow {
       std::borrow::Cow::Owned(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
-        a: msg.a,
+        array: msg.array
+          .into_iter()
+          .map(|elem| super::msg::Turtle::into_rmw_message(std::borrow::Cow::Owned(elem)).into_owned())
+          .collect(),
       }),
       std::borrow::Cow::Borrowed(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
-      a: msg.a,
+        array: msg.array
+          .iter()
+          .map(|elem| super::msg::Turtle::into_rmw_message(std::borrow::Cow::Borrowed(elem)).into_owned())
+          .collect(),
       })
     }
   }
 
   fn from_rmw_message(msg: Self::RmwMsg) -> Self {
     Self {
-      a: msg.a,
+      array: msg.array
+          .into_iter()
+          .map(super::msg::Turtle::from_rmw_message)
+          .collect(),
     }
   }
 }

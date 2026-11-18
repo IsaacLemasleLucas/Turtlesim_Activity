@@ -3,7 +3,7 @@ import rclpy
 from rclpy.node import Node
 from functools import partial
 
-from turtlesim_interfaces.msg import Turtle
+from turtlesim_interfaces.msg import Turtle, TurtleArray
 from turtlesim.srv import Spawn
 import random
 
@@ -13,19 +13,17 @@ class TurtleSpawnerNode(Node):
     def __init__(self):
         super().__init__("turtle_spawner")
         self.new_turtle = Turtle()
+        self.turtles = TurtleArray()
         self.random_position_turtle()
         # Create a timer to call the service spawn every x times
         self.timer_ = self.create_timer(1.0, self.call_turtle_spawner)
-        # self.publisher_ = self.create_publisher(Turtle, "alive_turtle", 10)
+        self.publisher_ = self.create_publisher(TurtleArray, "alive_turtle", 10)
 
     # Function to create the random positions
     def random_position_turtle(self):
         self.new_turtle.x     = random.uniform(0.0,11.0)
         self.new_turtle.y     = random.uniform(0.0,11.0) 
         self.new_turtle.theta = random.uniform(0.0,360.0)
-        # self.x     = random.uniform(0.0,11.0)
-        # self.y     = random.uniform(0.0,11.0)
-        # self.theta = random.uniform(0.0,360.0)
 
     # Function to call the service spawn
     def call_turtle_spawner(self):
@@ -45,8 +43,9 @@ class TurtleSpawnerNode(Node):
                                          y=self.new_turtle.y, 
                                          theta=self.new_turtle.theta))
 
-        self.get_logger().info(f"New Turtle Data : Name = {self.new_turtle.name} & x,y = {self.new_turtle.x},{self.new_turtle.y}")
-
+        # Publishing the list of alives turtles
+        self.turtles.array.append(self.new_turtle)
+        self.publisher_.publish(self.turtles)
 
     
     def callback_turtle_spawner(self, future, x, y, theta):

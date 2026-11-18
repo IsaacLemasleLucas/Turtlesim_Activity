@@ -17,10 +17,14 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'array'
+#include "turtlesim_interfaces/msg/detail/turtle__struct.h"
+
 /// Struct defined in msg/TurtleArray in the package turtlesim_interfaces.
 typedef struct turtlesim_interfaces__msg__TurtleArray
 {
-  int64_t a;
+  turtlesim_interfaces__msg__Turtle__Sequence array;
 } turtlesim_interfaces__msg__TurtleArray;
 
 // Struct for a sequence of turtlesim_interfaces__msg__TurtleArray.
