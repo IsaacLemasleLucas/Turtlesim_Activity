@@ -4,8 +4,9 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from turtlesim.msg import Pose
 import math
-
+from functools import partial
 from turtlesim_interfaces.msg import Turtle, TurtleArray
+from turtlesim_interfaces.srv import CatchTurtle
     
 class TurtleControlNode(Node):
     def __init__(self):
@@ -27,6 +28,7 @@ class TurtleControlNode(Node):
         # --- Goal to reach --- #
         self.goal_x     = 10.0
         self.goal_y     = 2.0
+        self.goal_name  = ""
 
         # --- Publisher, subscriber & timer --- #
         self.publisher_  = self.create_publisher(Twist, "turtle1/cmd_vel", 10)
@@ -65,15 +67,32 @@ class TurtleControlNode(Node):
         else:
             msg.linear.x  = 0.0
             msg.angular.z = 0.0
-
+            self.call_kill_the_turtle(self.goal_name)
+            
         # --- Publish the message --- #
         self.publisher_.publish(msg)
 
     def alive_turtle_callback(self, msg):
         self.get_logger().info(f"\n\nLast turtle = {msg.array[-1].name}\n")
-        self.goal_x = msg.array[-1].x
-        self.goal_y = msg.array[-1].y
+        self.goal_x    = msg.array[-1].x
+        self.goal_y    = msg.array[-1].y
+        self.goal_name = msg.array[-1].name
 
+    def call_kill_the_turtle(self, name_to_kill):
+        client = self.create_client(CatchTurtle, "kill_turtle")
+        while not client.wait_for_service(1.0):
+            self.get_logger().info(f"Waiting for service Turtle Killer...")
+        request = CatchTurtle.Request()
+        request.name = name_to_kill
+        future = client.call_async(request)
+        future.add_done_callback(partial(self.callback_kill_that_name, name=name_to_kill))
+
+    def callback_kill_that_name(self, future, name):
+        try:
+            response = future.result()
+            self.get_logger().info(f"The turtle to kill is {response.name}")
+        except Exception as e :
+            self.get_logger().info(f"Service call failed %r" % (e,))
     
 def main(args=None):
     rclpy.init(args=args)
